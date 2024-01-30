@@ -1,0 +1,128 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #faef9b;
+    text-align: center;
+    font-family: helvetica;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    background-color: #faef9b;
+    height: 125px;
+    width: 100%;
+    padding: 20px;
+}
+
+#head{
+width: 100%;
+height: 100%;
+background-color: #f6d776;
+box-sizing: border-box;
+}
+/* z jakiegoś powodu strona rozciąga sie w poziomie
+po za okno przeglądarki, nie wiem czemu. Prowizorycznie 
+naprawiłem to"overflow-x: hidden" */
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.button {
+    width: 100%;
+    background-color: #6da4aa;
+    border-left: 15px solid #647D87;
+}
+
+#but3 {
+    border-right: 15px solid #647D87;
+}
+
+.button:hover {
+    background-color: #647d87;
+}
+
+/* nazwa klasy to pozostałość po 
+<main> które zamieniłem na <div>*/
+.main {
+    padding: 20px;
+    height: 400px;
+    width: 100vw;
+    background-color: #faef9b;
+    box-sizing: border-box
+}
+
+#one {
+    color: #534848;
+    background-color: #f6d776;
+    float: left;
+    width: 48%;
+    height: 100%;
+}
+
+#two_wrap {
+    background-color: #f6d776;
+    color: #00f;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+/* nie wiem czemu div three i four ciągle wychodzi poza "two_wrap", 
+jednostki procentwe źle obliczają odległość i jakiś problem z "margine"
+próbowałem " box-sizing" nie pomaga,*/
+#three {
+    color: #414933;
+    margin: 10px;
+    background-color: #f3c744;
+    height: 50%;
+    width: 100%;
+}
+
+#four_wrap {
+    color: #2a8dd8;
+    margin: 20px;
+    padding: 0px;
+    background-color: #f3c744;
+    height: 50%;
+    width: 100%;
+    box-sizing: content-box;
+
+}
+
+/* ten sam problem tu*/
+.four_element {
+    color: #414933;
+    margin: 20px;
+    background-color: hsl(45, 88%, 51%);
+    height: 90%;
+    width: 40%;
+    box-sizing: content-box;
+    float: left;
+
+}
+
+footer {
+    background-color: #6da4aa;
+    height: 205px;
+    width: 100%;
+
+}
+
+
+/* miałem ten sam problem co wyżej, połączenie "box-sizing" 
+i obramowania w tym samym kolorze to jedyny sposób jaki znalazłem*/
+#five {
+    background-color: #647D87;
+    display: inline;
+    width: 20%;
+    height: 100%;
+    float: left;
+    border: solid 20px #6da4aa;
+    box-sizing: border-box;
+}
